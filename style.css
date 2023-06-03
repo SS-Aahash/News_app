@@ -1,0 +1,257 @@
+*{
+    font-family: "Inter",sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.pic{
+    background-image: url("./assets/images/image-web-3-mobile.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 200px;
+}
+.complete{
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.454);
+    top: 0;
+    left: 0;
+}
+.sidebar{
+    width: 70%;
+    float: right;
+    height: 100%;
+    padding: 20px;
+    background-color: white;
+}
+
+nav{
+    margin-top: 90px;
+}
+
+nav li{
+    margin-top: 20px;
+    list-style: none;
+    font-size: 18px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: hsl(35, 77%, 62%);
+}
+.close{
+    float: right;
+}
+.close:hover{
+    cursor: pointer;
+}
+body{
+    margin: 0px;
+}
+.grandparent{
+    padding: 30px 18px 30px 18px;
+}
+.parent{
+    display: grid;
+    gap: 1.1em;
+    margin-top: 30px;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 2px solid red; */
+
+}
+.svg_button{
+    background-color: transparent;
+    border: none;
+    width: fit-content;
+    height: fit-content;
+}
+.svg_button:hover{
+    cursor: pointer;
+}
+.bright{
+    font-size: 34px;
+    font-weight: 800;
+}
+
+.para{
+    font-size: 12.5px;
+    font-weight: 400;
+    color:  hsl(236, 13%, 42%);
+    line-height: 1.8em;
+}
+
+#red_button{
+    width: 150px;
+    height: 38px;
+    border: none;
+    background-color:hsl(5, 85%, 63%);
+    font-size: 10px;
+    color: white;
+    font-weight: 600;
+    letter-spacing: 5px;
+    margin-top: 20px;
+}
+#red_button:hover{
+    background-color: hsl(240, 100%, 5%);
+    cursor: pointer;
+}
+
+/* purple_box */
+.purple_box{
+    background-color: hsl(240, 100%, 5%);
+    color: white;
+    margin: 30px 0 50px 0;
+    padding: 20px;
+}
+.head_of_purle_box{
+    color: hsl(35, 77%, 62%);
+    font-weight: 700;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.box_heading{
+    font-weight: 700;
+}
+.box_heading:hover{
+    color: hsl(35, 77%, 62%);
+    cursor: pointer;
+}
+
+.box_para{
+   color: hsl(233, 8%, 79%);
+   margin: 10px 0px 0px 0px;
+   font-size: 12px;
+   line-height: 22px;
+}
+.special{
+    border: 1px solid hsla(236, 13%, 42%, 0.498);
+    margin: 20px 0 20px 0;
+}
+
+/* lastflex_row style*/
+.product_preview{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.product{
+    display: flex;
+    gap: 20px;
+}
+.product_img img{
+    width: 100px;
+    height: 115 px;
+}
+
+.number_product{
+    color: hsl(236deg 13% 42% / 42%);
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.head_product{
+    font-weight: 800;
+    font-size: 15px;
+    color : hsl(240, 100%, 5%);
+}
+.head_product:hover{
+    color: hsl(35, 77%, 62%);
+    cursor: pointer;
+}
+
+.product_para{
+    color: hsl(236, 13%, 42%);
+    font-size : 12px;
+    line-height: 20px;
+}
+
+.the_parabox{
+    display: flex;
+    flex-direction : column;
+    gap: 7px;
+    justify-content: space-around;
+}
+
+@media(min-width : 376px){
+    .svg_button{
+        display : none;
+    }    
+    .complete{
+        display: block;
+        background: none;
+        position: static;
+        width: auto;
+    }
+    .sidebar{
+        width: 100%;
+        height: 100%;
+        padding: 0;
+    }
+    .close{
+        display: none;
+    }
+    nav{
+        display: flex;
+        margin: 0;
+        gap: 2em;
+    }
+    nav li{
+        margin: 0;
+    }
+    a{
+        color: hsl(236, 13%, 42%);
+        font-size: 16px;
+    }
+    .grandparent{
+        padding: 30px 200px 0px 200px;
+    }
+    .parent{
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(2,1fr);
+        gap: 1em;
+        width: fit-content;
+    }
+    .pic{
+        grid-column: span 2;
+        background-image: url("./assets/images/image-web-3-desktop.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    .purple_box{
+        grid-column-start: 3;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        margin: 0;
+    }
+    .bright{
+        font-size: 45px;
+        margin: 0;
+    }
+    .product_preview{
+        flex-direction: row;
+        margin-top: 30px;
+    }
+    .para{
+        font-size: 14px;   
+        display: flex;
+        flex-direction : column;
+        justify-content: space-around;
+    }
+    .bright{
+        display: flex;
+        align-items: center;
+        width: 270px;
+    }
+}
